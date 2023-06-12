@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        main{
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+        section{
+            width: 50%;
+            height: 50vh;
+            position: absolute;
+        }
+        section:first-child{
+            background-color: red;
+            left: 0;
+        }
+        section:nth-child(2){
+            background-color: green;
+            right: 0;
+        }
+        section:nth-child(3){
+            background-color: orange;
+            left: 0;
+            bottom: 0;
+        }
+        section:nth-child(4){
+            background-color: hotpink;
+            right: 0;
+            bottom: 0;
+        }
+        main > section > div {
+            background-color: white;
+            width: 12vw;
+            height: 24vh;
+            border-radius: 90%;
+            position: absolute;
+            right: calc(50% - 6vw);
+            bottom: calc(25vh - 12vh);
+        }
+        main > section > div > div {
+            background-color: red;
+            width: 4vw;
+            height: 8vh;
+            position: absolute;
+            right: calc(50% - 2vw);
+            bottom: calc(12vh - 4vh);
+        }
+        main > div{
+            background-color: white;
+            width: 8vw;
+            height: 16vh;
+            position: absolute;
+        }
+        div:nth-child(5){
+            top: 0;
+            left: 0;
+            border-bottom-right-radius: 100%;
+        }
+        div:nth-child(6){
+            width: 10vw;
+            height: 10vh;
+            border-radius: 0 0 12rem 12rem;
+            top: 0;
+            right: calc(50% - 5vw);
+        }
+        div:nth-child(7){
+            top: 0;
+            right: 0;
+            border-bottom-left-radius: 100%;
+        }
+        div:nth-child(8){
+            bottom: 0;
+            left: 0;
+            border-top-right-radius: 100%;
+        }
+        div:nth-child(9){
+            width: 10vw;
+            height: 10vh;
+            border-radius: 12rem 12rem 0 0;
+            right: calc(50% - 5vw);
+            bottom: 0;
+        }
+        div:nth-child(10){
+            bottom: 0;
+            right: 0;
+            border-top-left-radius: 100%;
+        }
+        div:nth-child(11){
+            width: 12vw;
+            height: 24vh;
+            right: calc(50% - 6vw);
+            bottom: calc(50vh - 12vh);
+        }
+        main > div > div {
+            background-color: red;
+            width: 6vw;
+            height: 12vh;
+            border-radius: 90%;
+            position: absolute;
+            right: calc(50% - 3vw);
+            bottom: calc(12vh - 6vh);
+        }
+
+    </style>
+</head>
+<body>
+<main>
+    <section><div><div></div></div></section>
+    <section><div><div></div></div></section>
+    <section><div><div></div></div></section>
+    <section><div><div></div></div></section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div><div></div></div>
+</main>
+</body>
+</html>
